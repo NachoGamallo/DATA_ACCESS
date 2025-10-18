@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inventions>
+    <invention id="1">
+        <name>Falcon 9</name>
+        <year>2010</year>
+        <area>Aeroespacial</area>
+    </invention>
+    <invention id="2">
+        <name>Tesla model S</name>
+        <year>2012</year>
+        <area>Automocion eléctrica</area>
+    </invention>
+    <invention id="3">
+        <name>Starlink</name>
+        <year>2019</year>
+        <area>Telecomunicaciones</area>
+    </invention>
+    <invention id="4">
+        <name>Neuralink</name>
+        <year>2016</year>
+        <area>Neurotecnologia</area>
+    </invention>
+</inventions>

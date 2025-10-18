@@ -1,0 +1,7 @@
+{
+  "peliculas": [
+    { "titulo": "Blade Runner", "anio": 1982 },
+    { "titulo": "El viaje de Chihiro", "anio": 2001 },
+    { "titulo": "La llegada", "anio": 2016 }
+  ]
+}
