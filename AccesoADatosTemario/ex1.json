@@ -1,0 +1,11 @@
+{
+    "curso": "2DAM",
+    "nombre": "Nacho",
+    "edad": "21",
+    "asignaturas": [
+        "Acceso a datos",
+        "Programacion movil",
+        "Ingles",
+        "Programacion"
+    ]
+}

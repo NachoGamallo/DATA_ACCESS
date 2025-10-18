@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<contactos>
+    <contacto id="c001">
+        <nombre>Elon</nombre>
+        <apellido>Musk</apellido>
+        <correos>
+            <trabajo>emusk@correo.com</trabajo>
+        </correos>
+        <telefonos>
+            <movil>616116611</movil>
+        </telefonos>
+    </contacto>
+
+    <contacto id='c002'>
+        <nombre>Steve</nombre>
+        <apellido>Jobs</apellido>
+        <correos>
+            <personal>micorreo@macos.com</personal>
+            <trabajo>steve@correo.com</trabajo>
+        </correos>
+        <telefonos>
+            <movil>626226622</movil>
+            <casa>965223344</casa>
+        </telefonos>
+    </contacto>
+
+    <contacto id='c003'>
+        <nombre>Ada</nombre>
+        <apellido>Lovelace</apellido>
+        <telefonos>
+            <casa>965211199</casa>
+            <trabajo>654789654</trabajo>
+        </telefonos>
+    </contacto>
+</contactos>

@@ -1,0 +1,40 @@
+{
+    "instituto": "IES Mutxamel",
+    "profesores": [
+        {
+            "apellidos": "Dianez",
+            "cursos": [
+                1,
+                2
+            ],
+            "modulos": [
+                "Acceso a datos",
+                "Entornos de desarrollo",
+                "Proyecto Intermodular"
+            ],
+            "nombre": "Silvia"
+        },
+        {
+            "apellidos": "Sanz",
+            "cursos": [2],
+            "modulos": ["Desarrollo de interfaces"],
+            "nombre": "Juan"
+        },
+        {
+            "apellidos": "Sanchez",
+            "cursos": [
+                1,
+                2
+            ],
+            "modulos": [
+                "Dispositivos moviles",
+                "Bases de datos"
+            ],
+            "nombre": "Angel"
+        }
+    ],
+    "curso": "2025/2026",
+    "equipoDocente": "2DAM",
+    "Anio": 1999,
+    "activo": true
+}
