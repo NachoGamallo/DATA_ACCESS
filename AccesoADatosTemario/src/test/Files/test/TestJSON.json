@@ -1,0 +1,20 @@
+{
+    "country": "ES",
+    "currency": "EUR",
+    "total": 2,
+    "source": "catalogo",
+    "moviles": [
+        {
+            "id": 1,
+            "category": "Gama alta",
+            "year": 2023,
+            "brand": "apple"
+        },
+        {
+            "id": 2,
+            "category": "Gama alta",
+            "year": 2024,
+            "brand": "Samsung"
+        }
+    ]
+}

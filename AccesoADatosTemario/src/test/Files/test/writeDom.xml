@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Alumns>
+    <Student id="1">
+        <name>Nacho</name>
+        <studies>2DAM</studies>
+        <age>21</age>
+        <isMaried>true</isMaried>
+    </Student>
+    <Student id="2">
+        <name>Sergio</name>
+        <studies>2DAM</studies>
+        <age>19</age>
+        <isMaried>true</isMaried>
+    </Student>
+    <Student id="3">
+        <name>Kiko</name>
+        <studies>1DAW</studies>
+        <age>20</age>
+        <isMaried>false</isMaried>
+    </Student>
+    <Student id="4">
+        <name>Nour</name>
+        <studies>2UNI</studies>
+        <age>19</age>
+        <isMaried>true</isMaried>
+    </Student>
+</Alumns>

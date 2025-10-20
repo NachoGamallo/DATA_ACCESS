@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviles>
+    <movil id="1">
+        <name>iPhone 15 Pro</name>
+        <year>2023</year>
+        <brand>Apple</brand>
+        <category>Gama alta</category>
+    </movil>
+    <movil id="2">
+        <name>Galaxy S24 Ultra</name>
+        <year>2024</year>
+        <brand>Samsung</brand>
+        <category>Gama alta</category>
+    </movil>
