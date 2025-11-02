@@ -11,7 +11,7 @@ public class ObjectsInBinaryFile {
     //Serializacion : Convertir objeto en una secuencia de bytes para almacenarlo en un fichero.
     //Deserializacion: Proceso inverso a la serializacion.
 
-    static File file = new File("./src/test/Files/testEmployee");
+    static String file = "./src/test/Files/testEmployee";
     static List <TestEmployee> listEmployee = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class ObjectsInBinaryFile {
         TestEmployee testEmployee = new TestEmployee("nacho",true,21);
 
         try (ObjectOutputStream os = new ObjectOutputStream(
-                Files.newOutputStream(Path.of("./src/test/Files/testEmployee")))){
+                Files.newOutputStream(Path.of(file)))){
 
             listEmployee.add(testEmployee);
             listEmployee.add(new TestEmployee("Jose",false,12));
@@ -32,7 +32,7 @@ public class ObjectsInBinaryFile {
         }
 
         try (ObjectInputStream oi = new ObjectInputStream(
-                Files.newInputStream(Path.of("./src/test/Files/testEmployee")))){
+                Files.newInputStream(Path.of(file)))){
 
             int temp = listEmployee.size();
 
