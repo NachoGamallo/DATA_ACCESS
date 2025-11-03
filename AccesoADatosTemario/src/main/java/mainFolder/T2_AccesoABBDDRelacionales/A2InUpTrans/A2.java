@@ -17,7 +17,7 @@ public class A2 {
 
             connection.setAutoCommit(false); // Desactivar autocommit para transacciones
 
-            // Preparar statements
+            // Preparar statement
             String insertSQLComment = "INSERT INTO comment (id, type_comment, description, created_at, author_id) " +
                     "VALUES (?, ?, ?, now(), ?)";
 
@@ -33,8 +33,10 @@ public class A2 {
             int nextId = 1; // Si la tabla está vacía
 
             if (rsMax.next()) {
+
                 int maxId = rsMax.getInt(1);
                 nextId = maxId + 1;
+
             }
 
             // Procesar cada comentario
@@ -57,16 +59,23 @@ public class A2 {
                 psUpdate.executeUpdate();
 
                 nextId++; // Incrementar para el siguiente comentario
+
             }
 
             // Contar total de comentarios del autor
             String countSQL = "SELECT COUNT(*) FROM comment WHERE author_id = ?";
+
             try (PreparedStatement psCount = connection.prepareStatement(countSQL)) {
+
                 psCount.setInt(1, idAuthor);
                 ResultSet rsCount = psCount.executeQuery();
+
                 if (rsCount.next()) {
+
                     totalComments = rsCount.getInt(1);
+
                 }
+
             }
 
             connection.commit(); // Confirmar transacción
@@ -77,11 +86,14 @@ public class A2 {
                     " comentarios.");
 
         } catch (SQLException e) {
+
             System.out.println("Ha ocurrido un error. Se deshacen los cambios.");
             System.out.println("SQLException: " + e.getMessage());
             System.out.println("State: " + e.getSQLState());
             System.out.println("VendorError: " + e.getErrorCode());
+
         }
+
     }
 
 }
