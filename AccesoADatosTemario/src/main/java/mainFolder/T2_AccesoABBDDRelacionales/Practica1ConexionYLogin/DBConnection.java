@@ -3,6 +3,7 @@ package mainFolder.T2_AccesoABBDDRelacionales.Practica1ConexionYLogin;
 import java.sql.*;
 import java.util.Properties;
 import java.util.Scanner;
+import java.util.Set;
 
 public class DBConnection {
 
@@ -23,6 +24,8 @@ public class DBConnection {
 
         try (Connection con = DriverManager.getConnection(server,user,password)){
 
+            String [] paramsToPass = {server,user,password};
+
             System.out.println("Buenos días has ingresado a la base de datos de practicas:");
             System.out.println("============================================================");
 
@@ -34,6 +37,7 @@ public class DBConnection {
             if (checkUser(con,localUser,localPassword)){
 
                 System.out.println("Inicio de sesion correcto");
+                afterLogIn.run(paramsToPass, getIdFromUser(con,localUser,localPassword));
 
             }else {
 
@@ -61,6 +65,27 @@ public class DBConnection {
         ResultSet resultSelect = select.executeQuery();
 
         return resultSelect.next();
+
+    }
+
+    //Agregado para la ampliacion, vamos a pasar el id del usuario.
+    public static int getIdFromUser(Connection con , String user, String password) throws SQLException{
+
+        String query = "SELECT id FROM usuarios WHERE nombre = ? AND password = ?";
+        PreparedStatement select = con.prepareStatement(query);
+        select.setString(1,user);
+        select.setString(2,password);
+        ResultSet resultSet = select.executeQuery();
+
+        if (resultSet.next()){
+
+            return resultSet.getInt("id");
+
+        }else {
+
+            throw new SQLException("No se encotro el usuario en bbdd");
+
+        }
 
     }
 
